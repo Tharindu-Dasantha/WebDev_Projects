@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button Change</title>
+
+    <style>
+      .content {
+        display: none;
+      }
+
+      .content.show {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="buttons">
+      <button id="button1" onclick="showContent('content1')">Button 1</button>
+      <button id="button2" onclick="showContent('content2')">Button 2</button>
+      <button id="button3" onclick="showContent('content3')">Button 3</button>
+    </div>
+    <div id="contentContainer">
+      <div id="content1" class="content">Content for Button 1</div>
+      <div id="content2" class="content">Content for Button 2</div>
+      <div id="content3" class="content">Content for Button 3</div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
